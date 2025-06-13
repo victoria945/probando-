@@ -1,0 +1,23 @@
+
+edad = 18
+tiene_licencia = False
+if edad >= 18 and tiene_licencia:
+    print("Puede conducir")
+else:
+    print("No puede conducir")
+
+genero = input("Ingrese género (Masculino/Femenino)")
+tiene_carnet = int(input("Ingrese carnet vigente (1/0)"))
+if genero == 'Masculino' and tiene_carnet == 1:
+    print("Debe pagar $20.000")
+elif genero == 'Masculino' and tiene_carnet == 0:
+    print("Debe pagar $200.000")
+elif genero == 'Femenino' and tiene_carnet == 1:
+    print("Debe pagar $10.000")
+elif genero == 'Femenino' and tiene_carnet == 0:
+    print("Debe pagar $100.000")
+
+#SI GENERO = MASCULINO Y TIENE_CARNET_VIGENT = TRUE -> DEBE PAGAR 20.000
+#SI GENERO = MASCULINO Y TIENE_CARNET_VIGENT = FALSE -> DEBE PAGAR 200.000
+#SI GENERO = FEMENINO Y TIENE_CARNET_VIGENT = TRUE -> DEBE PAGAR 10.000
+#SI GENERO = FEMENINO Y TIENE_CARNET_VIGENT = FALSE -> DEBE PAGAR 100.000
